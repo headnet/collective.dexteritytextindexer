@@ -45,8 +45,8 @@ is done with directives::
 
 If you want to mark fields of an existing 3rd party behavior, it can be
 done using this utility function::
-
-    from plone.app.dexterity.interfaces import IBasic
+    
+    from plone.app.dexterity.behaviors.metadata import IBasic
     from collective.dexteritytextindexer.utils import searchable
 
     searchable(IBasic, 'title')
@@ -153,13 +153,13 @@ interface (dexterity objects do not provide behavior interfaces of behaviors,
 which are not using attribute storage).
 
 
-Credits
-=======
+Contributors
+============
 
-Sponsered by `4teamwork`_.
+(In order of appearance)
 
- * `Jonas Baumann`_, author
-
-
-.. _`4teamwork`: http://www.4teamwork.ch/
-.. _`Jonas Baumann`: http://github.com/jone
+- `Jonas Baumann <http://github.com/jone>`_
+- `Philippe Gross <http://github.com/phgross>`_
+- `Lukas Graf <http://github.com/lukasgraf>`_
+- `Izhar Firdaus <http://github.com/kagesenshi>`_
+- `Sune Broendum Woeller <http://github.com/sunew>`_

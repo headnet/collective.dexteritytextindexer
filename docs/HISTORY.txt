@@ -2,8 +2,25 @@ Changelog
 =========
 
 
-1.4.2 (unreleased)
+1.5.1 (unreleased)
 ------------------
+
+- Nothing changed yet.
+
+
+1.5 (2012-08-16)
+----------------
+
+- Fix missing field bug. #3
+
+  - Log an error when indexing an object and one of its schemas defines a missing
+    field as searchable.
+
+  - Make sure that indexing other existing fields of the same schema works.
+
+  - searchable utils function: raise AttributeError when field is missing.
+
+  [jone]
 
 - Added support for marking fields searchable in plone.supermodel XML models.
   This is done by implementing a IFieldMetadataHandler that is capable of
